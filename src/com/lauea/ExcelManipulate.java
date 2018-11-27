@@ -13,7 +13,7 @@ public class ExcelManipulate {
         this.inputPath = inputPath;
     }
     public static void main(String[] args) {
-        ExcelManipulate excelManipulate = new ExcelManipulate("./activex.xls");
+        ExcelManipulate excelManipulate = new ExcelManipulate("./samples/activex.xls");
         try{
             // initial woorkbook
             Workbook asposeWb = new Workbook(excelManipulate.inputPath);
