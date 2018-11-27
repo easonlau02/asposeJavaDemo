@@ -7,11 +7,15 @@ import com.aspose.cells.Worksheet;
 
 import java.util.Iterator;
 
-public class Main {
-    public static String INPUTPATH = "./activex.xls";
+public class ExcelManipulate {
+    public String inputPath;
+    public ExcelManipulate(String inputPath){
+        this.inputPath = inputPath;
+    }
     public static void main(String[] args) {
+        ExcelManipulate excelManipulate = new ExcelManipulate("./activex.xls");
         try{
-            Workbook asposeWb = new Workbook(INPUTPATH);
+            Workbook asposeWb = new Workbook(excelManipulate.inputPath);
             Worksheet ws = asposeWb.getWorksheets().get(0);
             CheckBoxCollection cbc = ws.getCheckBoxes();
             Iterator<CheckBox> iterator = cbc.iterator();
