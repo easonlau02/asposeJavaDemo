@@ -1,5 +1,5 @@
 ### How to read checkbox object from excel via [Aspose.Cells](https://products.aspose.com/cells/java)(Need license)
-If you come here, maybe you encounter issue about read Active X object,like checkbox from Excel via Apache POI.
+> If you come here, maybe you encounter issue about read Active X object,like checkbox from Excel via Apache POI.
 Yes, now Apache POI can not support type of Active X.
 Per research, I found one paid product can resovle your problem. Here give your a sample.
 
